@@ -1,4 +1,4 @@
-package br.upe;
+package br.upe.ex1;
 
 import java.util.Scanner;
 import java.util.Arrays;

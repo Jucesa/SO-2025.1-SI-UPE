@@ -1,10 +1,10 @@
-package br.upe;
+package br.upe.ex1;
 
 import java.util.ArrayList;
 
-class DetectorNumeros extends Detector {
+class DetectorLetras extends Detector {
 
-    public DetectorNumeros(String[] dados, boolean remover) {
+    public DetectorLetras(String[] dados, boolean remover) {
         super(dados, remover);
     }
 
@@ -13,7 +13,7 @@ class DetectorNumeros extends Detector {
         ArrayList<String> sequencia = new ArrayList<>();
 
         for (String s : dados) {
-            if (s.matches("[0-9]")) {
+            if (s.matches("[a-zA-Z]")) {
                 sequencia.add(s);
             } else {
                 processarSequencia(sequencia);
@@ -28,9 +28,9 @@ class DetectorNumeros extends Detector {
         if (sequencia.isEmpty()) return;
 
         if (remover) {
-            removeSequencia(sequencia, "Números");
+            removeSequencia(sequencia, "Letras");
         } else {
-            imprimirSequencia(sequencia, "Números");
+            imprimirSequencia(sequencia, "Letras");
         }
     }
 }
