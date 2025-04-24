@@ -61,9 +61,6 @@ public class Janta {
 
     }
 
-
-
-
     private static ArrayList<String> nomear(){
         HashSet<String> nomesSet = new HashSet<>();
         while(nomesSet.size() < NUM_FILOSOFOS) {
